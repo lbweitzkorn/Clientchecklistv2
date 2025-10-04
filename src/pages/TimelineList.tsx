@@ -208,7 +208,7 @@ export function TimelineList() {
           <div className="flex items-center h-14">
             <a href="/timelines" className="brand inline-flex items-center">
               <img
-                src={BRAND.logoDark}
+                src={BRAND.logo}
                 alt={BRAND.name}
                 width={160}
                 height={40}

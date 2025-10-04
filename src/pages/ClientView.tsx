@@ -3,7 +3,7 @@ import { Calendar, MapPin, ChevronDown, ChevronUp, Eye, EyeOff, Printer, Filter 
 import { supabase } from '../lib/supabase';
 import { ProgressRing } from '../components/ProgressRing';
 import { calculateBlockProgress, calculateTimelineProgress, calculateProgressByAssignee } from '../utils/progress';
-import { BRAND, detectBackgroundBrightness } from '../config/brand';
+import { BRAND } from '../config/brand';
 import themes, { type ThemeKey } from '../lib/themes';
 import type { Timeline, Task } from '../types';
 
@@ -14,7 +14,6 @@ export function ClientView() {
   const [expandedBlocks, setExpandedBlocks] = useState<Set<string>>(new Set());
   const [showBackground, setShowBackground] = useState(true);
   const [activeFilters, setActiveFilters] = useState<Set<string>>(new Set(['client', 'js', 'joint']));
-  const [logoSrc, setLogoSrc] = useState(BRAND.logoDark);
   const [showAddTask, setShowAddTask] = useState(false);
   const [newTaskTitle, setNewTaskTitle] = useState('');
   const [newTaskDueDate, setNewTaskDueDate] = useState('');
@@ -80,12 +79,6 @@ export function ClientView() {
 
       setTimeline(data);
       setExpandedBlocks(new Set(data.blocks?.map((b) => b.id) || []));
-
-      if (data.background_url) {
-        detectBackgroundBrightness(data.background_url).then((isBright) => {
-          setLogoSrc(isBright ? BRAND.logoDark : BRAND.logoLight);
-        });
-      }
     } catch (error) {
       console.error('Error loading timeline:', error);
       setError('Failed to load timeline');
@@ -255,7 +248,7 @@ export function ClientView() {
       <div className="timeline-content">
         <header className="client-header flex flex-col items-center py-6 px-4">
           <img
-            src={logoSrc}
+            src={BRAND.logo}
             alt={BRAND.name}
             height={32}
             className="w-auto mb-3"
@@ -282,7 +275,7 @@ export function ClientView() {
           </div>
 
           <div id="print-header" className="print-fixed-header" aria-hidden="true">
-            <img src={logoSrc} alt={BRAND.name} />
+            <img src={BRAND.logo} alt={BRAND.name} />
             <div className="print-head-meta">
               <div className="h1">{timeline.event?.code} — {timeline.event?.title}</div>
               <div className="h2">

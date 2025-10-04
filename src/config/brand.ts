@@ -1,11 +1,10 @@
 export const BRAND = {
-  logoLight: '/assets/js-logo-light.svg',
-  logoDark: '/assets/js-logo-dark.svg',
+  logo: '/assets/JS_Logo_Small_Grey_AW.jpg',
   name: 'JustSeventy',
 };
 
 export function getLogoForBackground(isDarkBackground: boolean): string {
-  return isDarkBackground ? BRAND.logoLight : BRAND.logoDark;
+  return BRAND.logo;
 }
 
 export function detectBackgroundBrightness(imageUrl: string): Promise<boolean> {
@@ -52,5 +51,5 @@ export function detectBackgroundBrightness(imageUrl: string): Promise<boolean> {
 }
 
 export function getOptimalLogo(isDarkBackground: boolean): string {
-  return isDarkBackground ? BRAND.logoLight : BRAND.logoDark;
+  return BRAND.logo;
 }

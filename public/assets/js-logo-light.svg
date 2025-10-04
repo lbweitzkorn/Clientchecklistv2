@@ -1,0 +1,37 @@
+<svg width="500" height="150" viewBox="0 0 2000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- J -->
+  <path d="M30 30 L30 160 Q30 200 70 200 L110 200" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- U -->
+  <path d="M160 30 L160 140 Q160 180 200 180 Q240 180 240 140 L240 30" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- S -->
+  <path d="M320 170 Q320 200 360 200 Q400 200 400 170 Q400 140 360 140 L340 140 Q300 140 300 100 Q300 60 340 60 Q380 60 380 100" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- T -->
+  <path d="M450 30 L570 30 M510 30 L510 200" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linecap="round"/>
+
+  <!-- S -->
+  <path d="M640 170 Q640 200 680 200 Q720 200 720 170 Q720 140 680 140 L660 140 Q620 140 620 100 Q620 60 660 60 Q700 60 700 100" stroke="#E8E8E8" stroke-width="20" fill="#E8E8E8" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- E -->
+  <path d="M780 30 L920 30 M780 115 L900 115 M780 200 L920 200 M780 30 L780 200" stroke="#E8E8E8" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- V -->
+  <path d="M980 30 L1060 200 L1140 30" stroke="#E8E8E8" stroke-width="20" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- E -->
+  <path d="M1200 30 L1340 30 M1200 115 L1320 115 M1200 200 L1340 200 M1200 30 L1200 200" stroke="#E8E8E8" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- N -->
+  <path d="M1400 200 L1400 30 L1520 200 L1520 30" stroke="#E8E8E8" stroke-width="20" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- T -->
+  <path d="M1580 30 L1700 30 M1640 30 L1640 200" stroke="#E8E8E8" stroke-width="20" fill="none" stroke-linecap="round"/>
+
+  <!-- Y -->
+  <path d="M1760 30 L1820 115 L1820 200 M1880 30 L1820 115" stroke="#E8E8E8" stroke-width="20" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- CREATIVE EVENTS subtitle -->
+  <text x="420" y="270" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="500" fill="#D0D0D0" letter-spacing="14">CREATIVE EVENTS</text>
+</svg>
